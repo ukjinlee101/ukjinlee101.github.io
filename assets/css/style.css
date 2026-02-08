@@ -240,9 +240,9 @@ pre {
 .pub-item {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   /* Reduced gap between text and image */
-  margin-bottom: 60px;
+  margin-bottom: 100px;
   /* Increased gap between items */
 }
 
