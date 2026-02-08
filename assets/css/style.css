@@ -59,7 +59,7 @@ pre {
 
 /* Header */
 .site-header {
-  padding: 40px 0 10px;
+  padding: 20px 0 10px;
   /* Reduced bottom padding */
   margin-bottom: 20px;
   /* Reduced bottom margin */
@@ -189,14 +189,13 @@ pre {
 /* Publications Layout */
 .pub-item {
   display: flex;
+  flex-direction: column;
   gap: 20px;
   margin-bottom: 40px;
-  align-items: flex-start;
 }
 
 .pub-image {
-  flex-shrink: 0;
-  width: 300px;
+  width: 100%;
   border: 1px solid var(--border-color);
   border-radius: 4px;
   overflow: hidden;
