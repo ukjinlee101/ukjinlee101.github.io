@@ -59,8 +59,10 @@ pre {
 
 /* Header */
 .site-header {
-  padding: 40px 0;
-  margin-bottom: 40px;
+  padding: 40px 0 10px;
+  /* Reduced bottom padding */
+  margin-bottom: 20px;
+  /* Reduced bottom margin */
   text-align: center;
 }
 
