@@ -75,8 +75,11 @@ pre {
   font-weight: 300;
   /* Minimalist thin font */
   color: #111;
-  margin-bottom: 2px;
-  /* Reduced gap */
+  color: #111;
+  margin-bottom: 0px;
+  /* Removed margin */
+  line-height: 1.1;
+  /* Reduced line-height to tighten gap */
   letter-spacing: 1px;
 }
 
@@ -84,8 +87,10 @@ pre {
   font-size: 1.2em;
   color: #777;
   font-weight: 300;
-  margin-bottom: 40px;
-  /* Increased gap */
+  margin-top: 5px;
+  /* Small controlled gap */
+  margin-bottom: 60px;
+  /* Significantly increased gap to nav */
 }
 
 .site-nav-centered {
