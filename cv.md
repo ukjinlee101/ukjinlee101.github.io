@@ -4,9 +4,6 @@ title: Curriculum Vitae
 permalink: /cv/
 ---
 
-<div class="cv-download">
-  <a href="{{ "/assets/files/cv.pdf" | relative_url }}" class="btn">Download Full CV (PDF)</a>
-</div>
 
 ## Education
 {% for edu in site.data.education %}

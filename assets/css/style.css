@@ -75,7 +75,8 @@ pre {
   font-weight: 300;
   /* Minimalist thin font */
   color: #111;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
+  /* Reduced gap */
   letter-spacing: 1px;
 }
 
@@ -83,7 +84,8 @@ pre {
   font-size: 1.2em;
   color: #777;
   font-weight: 300;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
+  /* Increased gap */
 }
 
 .site-nav-centered {
