@@ -142,11 +142,16 @@ pre {
   cursor: pointer;
   font-size: 1.2em;
   color: var(--accent-color);
-  padding: 5px;
+  padding: 10px;
+  /* Larger touch target */
   position: absolute;
   top: 0;
   right: 20px;
   transition: color 0.3s;
+  z-index: 1000;
+  /* Ensure on top */
+  -webkit-tap-highlight-color: transparent;
+  /* Remove highlight on tap */
 }
 
 .theme-toggle:hover {

@@ -45,11 +45,15 @@
                 // Update icon
                 updateIcon();
 
-                // Save preference
-                if (body.classList.contains('dark-mode')) {
-                    localStorage.setItem('theme', 'dark');
-                } else {
-                    localStorage.setItem('theme', 'light');
+                // Save preference safely
+                try {
+                    if (body.classList.contains('dark-mode')) {
+                        localStorage.setItem('theme', 'dark');
+                    } else {
+                        localStorage.setItem('theme', 'light');
+                    }
+                } catch (e) {
+                    console.warn('Unable to save theme preference:', e);
                 }
             });
         });
