@@ -210,14 +210,3 @@ pre {
 .pub-content {
   flex-grow: 1;
 }
-
-@media (max-width: 600px) {
-  .pub-item {
-    flex-direction: column;
-  }
-
-  .pub-image {
-    width: 100%;
-    max-width: 300px;
-  }
-}
