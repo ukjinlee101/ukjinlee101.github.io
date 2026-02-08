@@ -1,0 +1,151 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Roboto+Mono&display=swap');
+
+:root {
+  --bg-color: #fafafa; /* White-beige */
+  --text-color: #333;
+  --link-color: #0066cc;
+  --accent-color: #555;
+  --border-color: #eee;
+  --spacing: 20px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  color: #111;
+}
+
+h2 {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code, pre {
+  font-family: 'Roboto Mono', monospace;
+  background: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+  border-bottom: 1px solid var(--border-color);
+  padding: 20px 0;
+  margin-bottom: 40px;
+  display: flex; /* Ensure header content can be laid out if needed */
+  justify-content: center; /* Center wrapper in header if needed, though wrapper handles it */
+}
+
+.site-header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.site-title {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #111;
+}
+
+.site-nav a {
+  margin-left: 20px;
+  color: var(--accent-color);
+}
+
+/* CV Layout */
+.cv-download {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #333;
+  color: #fff !important;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+.cv-item {
+  margin-bottom: 25px;
+}
+
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.cv-header h3 {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.cv-date {
+  font-size: 0.9em;
+  color: var(--accent-color);
+  white-space: nowrap;
+}
+
+.cv-sub {
+  color: var(--accent-color);
+  margin-top: 4px;
+}
+
+.cv-detail {
+  margin: 4px 0;
+  font-size: 0.95em;
+}
+
+.cv-bullets {
+  margin-top: 8px;
+  padding-left: 20px;
+}
+
+.cv-type {
+  font-size: 0.8em;
+  font-weight: normal;
+  color: #777;
+  margin-left: 8px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .cv-header {
+    flex-direction: column;
+  }
+  
+  .cv-date {
+    margin-top: 4px;
+    display: block;
+  }
+}

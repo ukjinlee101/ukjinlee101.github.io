@@ -1,0 +1,11 @@
+- degree: Ph.D. in Computer Science
+  university: Stanford University
+  location: Stanford, CA
+  years: 2020 - Present
+  thesis_title: "Advanced AI Agent Architectures"
+
+- degree: B.S. in Computer Science
+  university: Massachusetts Institute of Technology
+  location: Cambridge, MA
+  years: 2016 - 2020
+  thesis_title: "Optimizing Neural Network Inference on Edge Devices"

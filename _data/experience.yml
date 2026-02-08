@@ -1,0 +1,17 @@
+- role: Research Intern
+  company: Google DeepMind
+  location: London, UK
+  dates: Summer 2023
+  bullet_points:
+    - developed novel reinforcement learning algorithms for robotic manipulation.
+    - Collaborated with a team of researchers to publish findings at NeurIPS.
+    - Optimized training pipelines, reducing experiment time by 30%.
+
+- role: Software Engineer Intern
+  company: Facebook (Meta)
+  location: Menlo Park, CA
+  dates: Summer 2019
+  bullet_points:
+    - Implemented a new feature for Instagram Stories used by millions of users.
+    - Refactored legacy code to improve performance and maintainability.
+    - Wrote comprehensive unit and integration tests.
