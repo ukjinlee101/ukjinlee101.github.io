@@ -89,8 +89,8 @@ pre {
   font-weight: 300;
   margin-top: 5px;
   /* Small controlled gap */
-  margin-bottom: 60px;
-  /* Significantly increased gap to nav */
+  margin-bottom: 30px;
+  /* Reduced gap by half */
 }
 
 .site-nav-centered {
@@ -183,6 +183,7 @@ pre {
     display: block;
   }
 }
+
 /* Publications Layout */
 .pub-item {
   display: flex;
@@ -190,6 +191,7 @@ pre {
   margin-bottom: 40px;
   align-items: flex-start;
 }
+
 .pub-image {
   flex-shrink: 0;
   width: 150px;
@@ -197,18 +199,22 @@ pre {
   border-radius: 4px;
   overflow: hidden;
 }
+
 .pub-image img {
   width: 100%;
   height: auto;
   display: block;
 }
+
 .pub-content {
   flex-grow: 1;
 }
+
 @media (max-width: 600px) {
   .pub-item {
     flex-direction: column;
   }
+
   .pub-image {
     width: 100%;
     max-width: 300px;
