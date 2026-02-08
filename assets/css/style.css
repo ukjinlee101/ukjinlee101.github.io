@@ -24,7 +24,8 @@ h1,
 h2,
 h3 {
   font-weight: 600;
-  margin-top: 2em;
+  margin-top: 1em;
+  /* Reduced from 2em */
   margin-bottom: 0.5em;
   color: #111;
 }
@@ -202,7 +203,8 @@ pre {
 }
 
 .pub-image img {
-  width: 100%;
+  width: 100% !important;
+  /* Force full width */
   height: auto;
   display: block;
 }

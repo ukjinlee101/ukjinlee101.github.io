@@ -3,4 +3,11 @@
   journal: "Nature Genetics"
   year: 2025
   pdf_link: "https://doi.org/10.1038/s41588-025-02239-6"
-  image: "/assets/images/Wong_NatGen_2025_Image01.png" # Replace with your image path
+  image: "/assets/images/Wong_NatGen_2025_Image01.png"
+
+- title: "Three-dimensional regulatory hubs support oncogenic programs in glioblastoma"
+  authors: "Sarah L. Breves, Dafne Campigli Di Giammartino, James Nicholson, Stefano Cirigliano, Syed Raza Mahmood, UkJin Lee, Alexander Martinez-Fundichely, Johannes Jungverdorben, Richa Singhania, Sandy Rajkumar, Raphael Kirou, Lorenz Studer, Ekta Khurana, Alexander Polyzos, Howard A. Fine and Effie Apostolou"
+  journal: "Molecular Cell"
+  year: 2025
+  pdf_link: "https://www.cell.com/molecular-cell/fulltext/S1097-2765(25)00200-X"
+  image: "/assets/images/Breves_MolCell_2025_Image01.png"
