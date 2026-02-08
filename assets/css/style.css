@@ -183,3 +183,34 @@ pre {
     display: block;
   }
 }
+/* Publications Layout */
+.pub-item {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+.pub-image {
+  flex-shrink: 0;
+  width: 150px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.pub-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.pub-content {
+  flex-grow: 1;
+}
+@media (max-width: 600px) {
+  .pub-item {
+    flex-direction: column;
+  }
+  .pub-image {
+    width: 100%;
+    max-width: 300px;
+  }
+}

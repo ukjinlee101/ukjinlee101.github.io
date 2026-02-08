@@ -1,11 +1,6 @@
-- title: "Learning to Reason with Large Language Models"
-  authors: "Ukjin Lee, John Doe, Jane Smith"
-  journal: "arXiv preprint"
-  year: 2024
-  pdf_link: "https://arxiv.org/abs/2401.00000"
-
-- title: "A Survey of Graph Neural Networks"
-  authors: "Ukjin Lee, Alice Johnson"
-  journal: "IEEE Transactions on Pattern Analysis and Machine Intelligence"
-  year: 2021
-  pdf_link: "#"
+- title: "Disruption of TAD hierarchy promotes LTR co-option in cancer"
+  authors: "Elissa W. P. Wong, Merve Sahin, Rui Yang, UkJin Lee, Dan Li, Yingqian A. Zhan, Rohan Misra, Fanny Tomas, Nawaf Alomran, Alexander Polyzos, Cindy J. Lee, Tuan Trieu, Alexander Martinez-Fundichely, Thomas Wiesner, Andrew Rosowicz, Shuyuan Cheng, Christina Liu, Morgan Lallo, Alexander N. Shoushtari, Taha Merghoub, Pierre-Jacques Hamard, Richard Koche, Ekta Khurana, Effie Apostolou, Deyou Zheng, Yu Chen, Christina S. Leslie & Ping Chi"
+  journal: "Nature Genetics"
+  year: 2025
+  pdf_link: "https://doi.org/10.1038/s41588-025-02239-6"
+  image: "/assets/images/Wong_NatGen_2025_Image01.png" # Replace with your image path
