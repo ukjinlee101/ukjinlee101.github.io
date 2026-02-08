@@ -8,7 +8,22 @@
   --link-color: #0066cc;
   --accent-color: #555;
   --border-color: #eee;
+  --header-title-color: #111;
+  --header-subtitle-color: #777;
+  --code-bg: #f4f4f4;
   --spacing: 20px;
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+  --bg-color: #1a1a1a;
+  --text-color: #e0e0e0;
+  --link-color: #66b3ff;
+  --accent-color: #aaa;
+  --border-color: #333;
+  --header-title-color: #fff;
+  --header-subtitle-color: #bbb;
+  --code-bg: #2d2d2d;
 }
 
 body {
@@ -18,6 +33,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 h1,
@@ -27,7 +43,7 @@ h3 {
   margin-top: 1em;
   /* Reduced from 2em */
   margin-bottom: 0.5em;
-  color: #111;
+  color: var(--header-title-color);
 }
 
 h2 {
@@ -47,7 +63,7 @@ a:hover {
 code,
 pre {
   font-family: 'Roboto Mono', monospace;
-  background: #f4f4f4;
+  background: var(--code-bg);
   padding: 2px 4px;
   border-radius: 4px;
 }
@@ -65,20 +81,22 @@ pre {
   margin-bottom: 20px;
   /* Reduced bottom margin */
   text-align: center;
+  position: relative;
+  /* For absolute positioning of toggle */
 }
 
 .wrapper-header {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
 }
 
 .site-title-static {
   font-size: 2.5em;
   font-weight: 300;
   /* Minimalist thin font */
-  color: #111;
-  color: #111;
+  color: var(--header-title-color);
   margin-bottom: 0px;
   /* Removed margin */
   line-height: 1.1;
@@ -88,7 +106,7 @@ pre {
 
 .site-subtitle {
   font-size: 1.2em;
-  color: #777;
+  color: var(--header-subtitle-color);
   font-weight: 300;
   margin-top: 5px;
   /* Small controlled gap */
@@ -104,7 +122,7 @@ pre {
 }
 
 .site-nav-centered a {
-  color: #555;
+  color: var(--accent-color);
   text-decoration: underline;
   /* Permanent underline for better visibility */
   text-decoration-thickness: 1px;
@@ -113,8 +131,26 @@ pre {
 }
 
 .site-nav-centered a:hover {
-  color: #000;
+  color: var(--header-title-color);
   text-decoration-thickness: 2px;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: var(--accent-color);
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  transition: color 0.3s;
+}
+
+.theme-toggle:hover {
+  color: var(--header-title-color);
 }
 
 /* CV Layout */
@@ -124,8 +160,9 @@ pre {
 }
 
 .btn {
-  background: #333;
-  color: #fff !important;
+  background: var(--header-title-color);
+  color: var(--bg-color) !important;
+  /* Button text color based on bg */
   padding: 8px 16px;
   border-radius: 4px;
   font-size: 0.9em;
@@ -171,7 +208,7 @@ pre {
 .cv-type {
   font-size: 0.8em;
   font-weight: normal;
-  color: #777;
+  color: var(--header-subtitle-color);
   margin-left: 8px;
 }
 
@@ -184,6 +221,13 @@ pre {
   .cv-date {
     margin-top: 4px;
     display: block;
+  }
+
+  .theme-toggle {
+    position: static;
+    /* Stack on mobile or adjust as needed */
+    display: block;
+    margin: 0 auto 10px;
   }
 }
 

@@ -3,12 +3,50 @@
 {% include head.html %}
 
 <body>
+    <script>
+        // Check for saved user preference, if any, on load of the website
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+    </script>
+
     {% include header.html %}
     <main class="page-content" aria-label="Content">
         <div class="wrapper">
             {{ content }}
         </div>
     </main>
+
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        // Update button icon based on current theme
+        function updateIcon() {
+            if (body.classList.contains('dark-mode')) {
+                toggleButton.textContent = '☀️';
+            } else {
+                toggleButton.textContent = '🌙';
+            }
+        }
+
+        // Initialize icon
+        updateIcon();
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+
+            // Update icon
+            updateIcon();
+
+            // Save preference
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
 </body>
 
 </html>
