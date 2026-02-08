@@ -89,8 +89,8 @@ pre {
   font-weight: 300;
   margin-top: 5px;
   /* Small controlled gap */
-  margin-bottom: 30px;
-  /* Reduced gap by half */
+  margin-bottom: 15px;
+  /* Reduced gap significantly */
 }
 
 .site-nav-centered {
@@ -194,7 +194,7 @@ pre {
 
 .pub-image {
   flex-shrink: 0;
-  width: 150px;
+  width: 300px;
   border: 1px solid var(--border-color);
   border-radius: 4px;
   overflow: hidden;
