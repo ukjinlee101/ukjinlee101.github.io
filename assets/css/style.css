@@ -237,13 +237,18 @@ pre {
 }
 
 /* Publications Layout */
-.pub-item {
+.cv-item.pub-item {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  /* Reduced gap between text and image */
-  margin-bottom: 100px;
-  /* Increased gap between items */
+  /* Even smaller gap: 5px */
+  margin-bottom: 80px;
+  /* Increased from 60px to 80px */
+}
+
+/* Remove bottom margin from last content element for tighter image gap */
+.pub-content>*:last-child {
+  margin-bottom: 0;
 }
 
 .pub-image {
