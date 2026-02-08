@@ -2,9 +2,9 @@
     <div class="wrapper-header">
         <div class="site-title-static">{{ site.title | escape }}</div>
         <nav class="site-nav-centered">
-            <a href="{{ " /" | relative_url }}">Home</a>
-            <a href="{{ " /cv/" | relative_url }}">About Me</a>
-            <a href="{{ " /blog/" | relative_url }}">Bio + AI</a>
+            <a href="{{ site.baseurl }}/">Home</a>
+            <a href="{{ site.baseurl }}/cv/">About Me</a>
+            <a href="{{ site.baseurl }}/blog/">Bio + AI</a>
         </nav>
     </div>
 </header>
