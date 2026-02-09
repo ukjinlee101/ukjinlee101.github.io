@@ -25,3 +25,10 @@
   year: 2023
   pdf_link: "https://www.nature.com/articles/s41594-023-01130-4"
   image: "/assets/images/Murphy_NSMB_2023_Image01.png"
+
+- title: "A Vector System for ABC Transporter-Mediated Secretion and Purification of Recombinant Proteins in Pseudomonas Species"
+  authors: "Jaewook Ryu, Ukjin Lee, Jiye Park, Do-Hyun Yoo, Jung Hoon Ahn"
+  journal: "Applied and Environmental Microbiology"
+  year: 2015
+  pdf_link: "https://journals.asm.org/doi/full/10.1128/aem.03514-14"
+  image: "/assets/images/Ryu_AEM_2015_Image01.jpeg"
